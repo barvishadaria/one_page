@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.main_screen {
+    background-color: #e9e9e9;
+    padding-top: 230px;
+    height: 100vh;
+}
+
+header {
+    margin-bottom: 170px;
+    padding-top: 38px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #e9e9e9;
+    padding-bottom: 38px;
+    z-index: 1;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul li {
+    margin-left: 32px;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #191919;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+ul li:hover a,ul li .active a  {
+    color: #42cdc8;
+}
+
+.main_title .wrap {
+    max-width: 480px;
+    float: right;
+}
+
+.main_title .wrap:after {
+    content: '';
+    display: block;
+    clear: right;
+}
+
+h1 {
+    font-size: 38px;
+    color: #1d1d1d;
+    margin-bottom: 40px;
+}
+
+.main_screen .wrap p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #787878;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    background-color: #42cdc8;
+    width: 180px ;
+    text-align: center;
+    line-height: 54px;
+}
+
+.about {
+    padding: 100px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #191919;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.about p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #787878;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.results {
+    padding: 100px 0;
+    background-color: #10c9c3;
+}
+
+.results .container {
+    display: flex;
+}
+
+.result {
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: flex-end;
+    width: 25%;
+}
+
+.result span {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.result:before {
+    content: '\f0b1';
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #fff;
+    font-size: 34px;
+    margin-right: 30px;
+}
+
+.result:nth-child(2):before {
+    content: '\f017';
+    font-weight: 400;
+}
+
+.result:nth-child(3):before {
+    content: '\f005';
+    font-weight: 400;
+}
+
+.result:last-of-type:before {
+    content: '\f004';
+    font-weight: 400;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo {
+    width: 25%;
+    height: 300px;
+}
+
+.photo:hover{
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.photo:first-of-type {
+    background-color: #838383;
+}
+
+.photo:last-of-type {
+    background-color: #838383;
+}
+
+.photo:nth-child(3) {
+    background-color: #838383;
+}
+
+.photo:nth-child(6) {
+    background-color: #838383;
+}
+
+.photo:nth-child(2) {
+    background-color: #ddd;
+}
+
+.photo:nth-child(4) {
+    background-color: #ddd;
+}
+
+.photo:nth-child(5) {
+    background-color: #ddd;
+}
+
+.photo:nth-child(7) {
+    background-color: #ddd;
+}
+
+.gallery button {
+    width: 100%;
+    background-color: #f5f5f5;
+    color: #8e8e8e;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    border: none;
+    line-height: 100px;
+    outline: none;
+}
+
+.work {
+    padding: 100px 0;
+    text-align: center;
+}
+
+h3 {
+    color: #191919;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.work p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #787878;
+    line-height: 25px;
+    margin-bottom: 57px;
+}
+
+.player {
+    width: 100%;
+    height: 570px;
+    background-color: #e9e9e9;
+    position: relative;
+}
+
+.player:after {
+    content: '\f04b';
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #fff;
+    width: 85px;
+    line-height: 85px;
+    font-size: 15px;
+    background-color: #10c9c3;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -43px;
+    left: 50%;
+    margin-left: -43px;
+    cursor: pointer;
+}
+
+.offers {
+    padding: 100px 0;
+    background-color: #f5f5f5;
+}
+
+.offers .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.offers_item {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Nunito Sans',sans-serif ;
+    font-weight: 400;
+    color: #898989;
+    line-height: 25px;
+    width: 25%;
+    margin-bottom: 60px;
+}
+
+.offers_item:before {
+    content: '\f3a5';
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    font-size: 37px;
+    color: #656565;
+    margin-bottom: 31px;
+}
+
+.offers_item span {
+    text-transform: uppercase;
+    color: #191919;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 19px;
+}
+
+.offers_item:nth-child(2):before {
+    content: '\f201';
+    font-weight: 900;
+}
+
+.offers_item:nth-child(3):before {
+    content: '\f3cd';
+    font-weight: 900;
+}
+
+.offers_item:nth-child(4):before {
+    content: '\f11b';
+    font-weight: 900;
+}
+
+.offers_item:nth-child(5):before {
+    content: '\f1d8';
+    font-weight: 900;
+}
+
+.offers_item:nth-child(6):before {
+    content: '\f005';
+    font-weight: 400;
+}
+
+.offers_item:nth-child(7):before {
+    content: '\f0d0';
+    font-weight: 900;
+}
+
+.offers_item:last-of-type:before {
+    content: '\f1fc';
+    font-weight: 900;
+}
+
+.review {
+    background-color: #10c9c3;
+    padding-top: 175px;
+    padding-bottom: 60px;
+}
+
+.owl-carousel {
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    max-width: 810px;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+}
+
+.owl-carousel span {
+    display: block;
+    margin-top: 40px;
+    font-size: 12px;
+}
+
+.owl-dots .owl-dot span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 7px;
+}
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dots .owl-dot.active span {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    bottom: -3px;
+}
+
+.partners {
+    padding: 65px 0;
+}
+
+.partners .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.message {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.message h3 {
+    margin-bottom: 35px;
+}
+
+.message p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #787878;
+    line-height: 20px;
+    margin-bottom: 38px;
+}
+
+.message .form_wrap {
+    max-width: 670px;
+    margin: auto;
+}
+
+.message .input {
+    width: 320px;
+    height: 47px;
+    margin-bottom: 30px;
+
+}
+
+.message form input {
+    border: none;
+    padding-left: 20px;
+    color: #787878;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    outline: none;
+}
+
+.input_name {
+    margin-right: 25px;
+    width: 320px;
+    height: 47px;
+    margin-bottom: 30px;
+}
+
+.input_email  {
+    width: 320px;
+    height: 47px;
+    margin-bottom: 30px;
+}
+
+.input_title {
+    width: 100%;
+    height: 47px;
+    margin-bottom: 30px;
+}
+
+textarea {
+    border: none;
+    resize: none;
+    color: #787878;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.message .btn {
+    border: none;
+    outline: none;
+}
+
+footer {
+    background-color: #141414;
+    padding: 100px 0;
+}
+
+.container_dialog {
+    max-width: 600px!important;
+    margin: auto;
+}
+
+#dialog .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.ui-dialog {
+    padding: 0;
+    width: 750px!important;
+    border: none!important;
+} /*почему не работет max-width?*/
+
+.ui-dialog-titlebar {
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0!important;
+    font-size: 24px;
+}
+
+.ui-dialog-content {
+    padding: 43px 0 166px 0!important;
+}
+
+.label_mail {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #363636;
+    text-align: center;
+    margin-right: 52px;
+}
+
+.container_dialog input {
+    width: 384px;
+    height: 60px;
+    border: 1px solid #b7b7b7;
+    border-radius: 4px;
+    outline: none;
+}
+
+.dialog_btn {
+    border: none;
+    outline: none;
+    width: 528px;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.container_dialog form span {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.log_in {
+    background-color: #547ac9;
+    font-size: 24px;
+}
+
+.fb_icon {
+    margin-right: 15px;
+    font-size: 23px;
+}
+
+.ui-dialog-titlebar-close {
+    top: -100px!important;
+    right: -100px!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

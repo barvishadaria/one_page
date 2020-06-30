@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1024px) {
+        .main_screen {
+            height: inherit;
+            padding-bottom:200px;
+        }
+
+    /*нужно что-то сделать с диалогом*/
+}
+
+@media only screen and (max-width: 420px) {
+    .results .container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+}
+
+@media only screen and (max-width: 360px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
